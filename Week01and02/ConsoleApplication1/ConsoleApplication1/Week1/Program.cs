@@ -6,6 +6,7 @@ using System.Threading.Tasks;
 using ConsoleApplication1.Week1;
 using System.Drawing;
 using System.IO;
+using System.Globalization;
 
 namespace ConsoleApplication1
 {
@@ -70,10 +71,14 @@ namespace ConsoleApplication1
             //Console.WriteLine(Anagrams.HasAnagramOf(a, b));
             //  Console.WriteLine(StringsAndNumbers.SumOfNumbersInString("a32nbui11"));
 
-            // Bitmap bunny = (Bitmap)Image.FromFile("bunny.bmp");
-            // GreyBmp.GreyScaleImage(bunny, "C:\\Users\\Natalie\\Desktop\\newbunny.bmp");
-            // GreyBmp.ResampleImage(bunny, new Size(4010, 1166), "C:\\Users\\Natalie\\Desktop\\bigbunny.bmp");
-            // Console.WriteLine(DecodeURL.DecodeUrl("nata%20h%3Axxx %3DNNNNN%2F"));
+            Bitmap bunny = (Bitmap)Image.FromFile("bunny.bmp");
+
+
+            GreyBmp.ResampleImage(bunny, new Size(4010, 1166), "C:\\Users\\Natalie\\Desktop\\bigbunny.bmp");
+            GreyBmp.BlurImage(bunny, "C:\\Users\\Natalie\\Desktop\\blurbunny.bmp");
+            GreyBmp.GreyScaleImage(bunny, "C:\\Users\\Natalie\\Desktop\\newbunny.bmp");
+            Console.WriteLine(DecodeURL.DecodeUrl("nata%20h%3Axxx %3DNNNNN%2F"));
+
             //List<int> a = new List<int>() {2,1, 3 };
             //List<int> b = new List<int>() { 1, 2,3};
             //Console.WriteLine(MaxScProduct.MaxScalarProduct(a, b));
@@ -122,23 +127,23 @@ namespace ConsoleApplication1
             //HackersTime.HackerTime();
             //var list = new List <int> { 1, 4, 2, 1, 4, 4, 4 };
             //Console.WriteLine(MaxSpan.MaxiSpan(list));
-            DateTime[] startDate = new DateTime[] {
-                new DateTime(2015, 10, 1,10,00,25),
-                new DateTime(2015, 10, 1,10,30,25),
-                new DateTime(2015, 10, 1,11,05,25),
-                new DateTime(2015, 10, 1),
-                new DateTime(2015, 10, 5)
-            };
+            //DateTime[] startDate = new DateTime[] {
+            //    new DateTime(2015, 10, 1,10,00,25),
+            //    new DateTime(2015, 10, 1,10,30,25),
+            //    new DateTime(2015, 10, 1,11,05,25),
+            //    //new DateTime(2015, 10, 1),
+            //    //new DateTime(2015, 10, 5)
+            //};
 
-            TimeSpan[] durations = new TimeSpan[] {
-                new TimeSpan(2, 10, 1),
-                new TimeSpan(3, 10, 2),
-                new TimeSpan(2, 10, 3),
-                new TimeSpan(5, 10, 4),
-                new TimeSpan(2, 10, 5)
-            };
+            //TimeSpan[] durations = new TimeSpan[] {
+            //    new TimeSpan(2, 10, 1),
+            //    new TimeSpan(3, 10, 2),
+            //    new TimeSpan(2, 10, 3),
+            //    //new TimeSpan(5, 10, 4),
+            //    //new TimeSpan(2, 10, 5)
+            //};
 
-            Appointments.FindIntersectingAppointments(startDate, durations);
+            // Appointments.FindIntersectingAppointments(startDate, durations);
 
             //PointF[] pointsa = new PointF[] {
             //     new PointF(0,0), new PointF(3,0),
@@ -150,39 +155,21 @@ namespace ConsoleApplication1
             //    new PointF(0,3)
             //};
             // PolygonCircumference.CalcCircumference(points);
-            // PolygonCircumference.CalcArea(points);
+            // PolygonCircumference.CalcArea(points);          
 
-            Time time2 = new Time(13,45,45,12,12,2015);
-           // time2.ToString();
-           // Time.Now();
-            //Time time1 = new Time(13, 45, 45, 12, 12, 2015);
-            //Time time3 = new Time(15, 45, 45, 12, 12, 2015);
-            //Pair pair = new Pair(time1, time2);
-            //Pair pair2 = new Pair(time1, time2);
-            //bool s = (pair == pair2);
-            //Console.WriteLine(s);
-            //Console.WriteLine(pair.Equals(pair2));
-           
-            //Fractions s1 = new Fractions(5, 3);
-            //Fractions s2 = new Fractions(5, 3);
-            //Fractions s3 = new Fractions(7, 3);
-            // s.ToString();
-            //  //Console.WriteLine(s.GetHashCode());
-            //  bool x = s == s2;
-            //  bool x1 = s == s3 ;
-            ////  Console.WriteLine(x+ "    "+x1);
-            //  bool a = s != s2;
-            //  bool a1 = s != s3;
-            // // Console.WriteLine(a + "    " + a1);
-            //  Fractions p = new Fractions(0,3);
-            //  double w;
-            //  double r = 10.5;
-            // w= s +r;
-            // w = s- r;
-            //  w = s - r;
-        
-        //    double b = (double)s2;
-        //    Console.WriteLine(b);
+
+
+            //Calendar.PrintCalendar(5, 2016, new CultureInfo("bg-BG"));
+            //DateTime da = new DateTime(1994,05,14,4,30,0);
+            //Console.WriteLine(ClockAngle.GetClockHandsAngle2(da));
+            //   RandomNumbers.GenerateRandomMatrix(3, 3, @" C:\Users\Natalie\Desktop\Nata.txt");
+
+            //DateTime dt = new DateTime();
+            //BankAccountBalance.Money(@" C:\Users\Natalie\Desktop\Pesho.txt");
+            string hack = (@"C:\Users\Natalie\Desktop\pesho.txt");
+            DateTime startDate = new DateTime(2015,3,30);
+            DateTime endDate = new DateTime(2015, 4, 30);
+          BankAccountBalance.GetTransactions(hack,startDate,endDate);
         }
     }
 }

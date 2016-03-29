@@ -1,0 +1,28 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.23107.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "VatTax", "VatTax\VatTax.csproj", "{883FB966-C12E-420A-9227-7AF9E1C03058}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "VatTaxApplication", "VatTaxApplication\VatTaxApplication.csproj", "{A6E130F7-2F07-4DB0-8871-D6395D0CE1D9}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{883FB966-C12E-420A-9227-7AF9E1C03058}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{883FB966-C12E-420A-9227-7AF9E1C03058}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{883FB966-C12E-420A-9227-7AF9E1C03058}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{883FB966-C12E-420A-9227-7AF9E1C03058}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A6E130F7-2F07-4DB0-8871-D6395D0CE1D9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A6E130F7-2F07-4DB0-8871-D6395D0CE1D9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A6E130F7-2F07-4DB0-8871-D6395D0CE1D9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A6E130F7-2F07-4DB0-8871-D6395D0CE1D9}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

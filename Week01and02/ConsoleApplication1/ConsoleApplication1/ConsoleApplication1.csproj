@@ -71,21 +71,19 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Week1\WordsInString.cs" />
     <Compile Include="week2,2\Appointments.cs" />
+    <Compile Include="week2,2\BankAccountBalance.cs" />
     <Compile Include="week2,2\Calendar.cs" />
+    <Compile Include="week2,2\ClockAngle.cs" />
     <Compile Include="week2,2\DateSums.cs" />
     <Compile Include="week2,2\Friday13.cs" />
     <Compile Include="week2,2\HackersTime.cs" />
     <Compile Include="week2,2\PolygonCircumference.cs" />
+    <Compile Include="week2,2\RandomNumbers.cs" />
     <Compile Include="week2.1\DirectoryTraversal.cs" />
     <Compile Include="week2.1\FactGenerator.cs" />
     <Compile Include="week2.1\InflateRectangle.cs" />
     <Compile Include="week2.1\ListSearch.cs" />
     <Compile Include="week2.1\ReverseAString.cs" />
-    <Compile Include="Week3,1\Fractions.cs" />
-    <Compile Include="Week3,1\LineSegment.cs" />
-    <Compile Include="Week3,1\Pair.cs" />
-    <Compile Include="Week3,1\Point.cs" />
-    <Compile Include="Week3,1\Time.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
@@ -94,6 +92,7 @@
     <Content Include="bunny.bmp">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
+    <Content Include="week1,3\bunny.bmp" />
   </ItemGroup>
   <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

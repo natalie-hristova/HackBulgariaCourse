@@ -1,0 +1,28 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.23107.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FastAndFurious", "FastAndFurious\FastAndFurious.csproj", "{A44832AE-3CB0-4868-B353-40B9EE16FBBD}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Shape", "Shape\Shape.csproj", "{C11273F0-0F2F-4597-AC93-A800DE2F9DC4}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{A44832AE-3CB0-4868-B353-40B9EE16FBBD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A44832AE-3CB0-4868-B353-40B9EE16FBBD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A44832AE-3CB0-4868-B353-40B9EE16FBBD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A44832AE-3CB0-4868-B353-40B9EE16FBBD}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C11273F0-0F2F-4597-AC93-A800DE2F9DC4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C11273F0-0F2F-4597-AC93-A800DE2F9DC4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C11273F0-0F2F-4597-AC93-A800DE2F9DC4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C11273F0-0F2F-4597-AC93-A800DE2F9DC4}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

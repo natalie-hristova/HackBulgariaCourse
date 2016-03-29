@@ -18,7 +18,7 @@ namespace ConsoleApplication1
                 for (int j = 0; j < input.Height; j++)
                 {
                     Color pixel = input.GetPixel(i, j);
-                    int x = (pixel.A + pixel.B + pixel.R) / 3;
+                    int x = (pixel.G + pixel.B + pixel.R) / 3;
                     Color newPixel = Color.FromArgb(x, x, x);
                     input.SetPixel(i, j, newPixel);
                 }
@@ -52,17 +52,62 @@ namespace ConsoleApplication1
         }
 
 
-     public static void BlurImage(Bitmap bitmap, string savePath)
+        public static void BlurImage(Bitmap bitmap, string savePath)
         {
-            Bitmap bmp2 = new Bitmap(bitmap.Width, bitmap.Height);
-            for (int i = 0; i < bitmap.Width; i++)
+           
+            int r = 0, g = 0, b = 0;
+            //Color pixel = bitmap.GetPixel(0, 0);
+            //bitmap.SetPixel(0, 0, pixel);
+            //pixel= bitmap.GetPixel(0, bitmap.Height -1);
+            //bitmap.SetPixel(0, bitmap.Size.Height - 1, pixel);
+            //pixel = bitmap.GetPixel(bitmap.Width-1, bitmap.Height - 1);
+            //bitmap.SetPixel(bitmap.Width - 1, bitmap.Size.Height - 1, pixel);
+            //pixel = bitmap.GetPixel(bitmap.Width - 1, 0);
+            //bitmap.SetPixel(bitmap.Width - 1,0, pixel);
+           
+
+            for (int i = 1; i < bitmap.Height; i++)
             {
-                for (int j = 0; j < bitmap.Height; j++)
+              pixel = bitmap.GetPixel(0,i);
+                bitmap.SetPixel(0, i,pixel);
+                pixel = bitmap.GetPixel(bitmap.Width - 1, i);
+                bitmap.SetPixel(bitmap.Width - 1, i, pixel);
+            }
+          
+            for (int i = 1; i < bitmap.Width; i++)
+            {
+                pixel = bitmap.GetPixel(i, 0);
+                bitmap.SetPixel(i, 0, pixel);
+                pixel = bitmap.GetPixel(i, bitmap.Height - 1);
+                bitmap.SetPixel(i,bitmap.Height - 1, pixel);
+            }
+            
+            for (int i = 1; i < bitmap.Width - 1; i++)
+            {
+                for (int j = 1; j < bitmap.Height - 1; j++)
                 {
-                    Color pixel = bitmap.GetPixel(i, j);
+                    for (int k = i-1; k < i + 2; k++)
+                    {
+                        for (int l = j-1; l < j + 2; l++)
+                        {
+                            r =r+ bitmap.GetPixel(k, l).R;
+                            b += bitmap.GetPixel( k,l).B;
+                            g += bitmap.GetPixel( k,l).G;
+                           
+                        }
+                        
+                    }
+                    r /= 9;
+                    b /= 9;
+                    g /= 9;
+                   
+                    Color newPixel = Color.FromArgb(r, g, b);
+                    bitmap.SetPixel(i, j, newPixel);
+                    r = 0;b = 0;g = 0;
                 }
             }
+            bitmap.Save(savePath);
         }
-
     }
 }
+

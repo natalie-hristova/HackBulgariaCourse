@@ -8,3 +8,7 @@ C:\Users\Natalie\Documents\Visual Studio 2015\Projects\ConsoleApplication1\Conso
 C:\Users\Natalie\Documents\Visual Studio 2015\Projects\HackBulgariaCourse\Week01and02\ConsoleApplication1\ConsoleApplication1\bin\Debug\ConsoleApplication1.exe.config
 C:\Users\Natalie\Documents\Visual Studio 2015\Projects\HackBulgariaCourse\Week01and02\ConsoleApplication1\ConsoleApplication1\obj\Debug\ConsoleApplication1.exe
 C:\Users\Natalie\Documents\Visual Studio 2015\Projects\HackBulgariaCourse\Week01and02\ConsoleApplication1\ConsoleApplication1\obj\Debug\ConsoleApplication1.pdb
+C:\Users\Natalie\Documents\Visual Studio 2015\Projects\HackBulgariaCourse\Week01and02\ConsoleApplication1\ConsoleApplication1\obj\Debug\ConsoleApplication1.csprojResolveAssemblyReference.cache
+C:\Users\Natalie\Documents\Visual Studio 2015\Projects\HackBulgariaCourse\Week01and02\ConsoleApplication1\ConsoleApplication1\bin\Debug\bunny.bmp
+C:\Users\Natalie\Documents\Visual Studio 2015\Projects\HackBulgariaCourse\Week01and02\ConsoleApplication1\ConsoleApplication1\bin\Debug\ConsoleApplication1.exe
+C:\Users\Natalie\Documents\Visual Studio 2015\Projects\HackBulgariaCourse\Week01and02\ConsoleApplication1\ConsoleApplication1\bin\Debug\ConsoleApplication1.pdb
